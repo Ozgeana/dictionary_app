@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary</title>
+
+</head>
+
+<body>
+    <audio id="sound"></audio>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Type the word here..." id="inp-word" />
+            <button id="btn">Search</button>
+        </div>
+        <div class="result" id="result">
+        </div>
+        <div class="icons">
+            <button id="add-word">
+                <i class="fa-solid fa-plus"></i> <!-- Artı ikonu -->
+            </button>
+            <button id="question-mark">
+                <i class="fa-solid fa-question"></i> <!-- Soru işareti ikonu -->
+                <span id="unknown-words-counter">0</span> <!-- Bilinmeyen kelime sayacı -->
+            </button>
+        </div>
+    </div>
+    <!-- Eklenen kelimeleri liste yerine ikon olarak göstermek için bir ikon ekleyin -->
+    <div id="word-icon">
+        <i class="fa-solid fa-paperclip"></i>
+    </div>
+    <!-- Eklenen kelimeleri liste olarak göstermek için bir div ve düğme ekleyin -->
+<div id="word-list-container">
+    <ul id="word-list"></ul>
+</div>
+<button id="show-words-button">Eklenen Kelimeleri Göster</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
